@@ -1,0 +1,45 @@
+<html>
+<head>
+
+</head>
+<body>
+<form>
+<input type = "button" name="Personajes" value="Personajes" onClick="mostrarMensaje()"/>
+<input type = "button" name="Planetas" value="Planetas" onClick="mostrarMensaje()"/>
+<ul>
+    <!--The JavaScript will load items here-->
+
+</ul>
+
+<script>
+    function mostrarMensaje(){
+        var starWarsPeopleList = document.querySelector('ul');
+        var valor=document.getElementsByName("Personajes")
+    if(var="Personajes"){   
+
+fetch('https://swapi.py4e.com/api/people') 
+.then(function(response) {   
+  return response.json(); 
+})
+    }else
+    fetch('https://swapi.py4e.com/api/people') 
+.then(function(response) {   
+  return response.json(); 
+})
+
+    }
+.then(function(json) {
+  let people = json.results; 
+
+  for(p of people) {
+    let listItem = document.createElement('li'); 
+    listItem.innerHTML = '<p>' + p.name + '</p>'; 
+    starWarsPeopleList.appendChild(listItem);  
+  }
+
+});
+    }
+        </script>
+</form>
+</body>
+</html>
