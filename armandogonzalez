@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<head>
+
+<title>Proyecto Front End - Star Wars App</title>
+
+<link rel="stylesheet" type="text/css" media="all" href="styles.css">
+
+<style type="text/css">
+.auto-style1 {
+	color: #FFFFFF;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="tswcontainer">
+	<div id="tswheader">
+	<!-- aqui empieza el encabezado de la pagina-->
+
+	<p class="auto-style1">
+	<img src="Banner.png">
+	</p>
+	<p class="auto-style1">&nbsp;</p>
+
+	<!-- aqui se termina el encabezado de la pagina-->
+	</div>
+
+	<div id="tswcontent">
+	<!-- aqui empieza el contenido -->
+<CENTER>
+<TABLE BORDER=1>
+<TR><TD>
+<H1>
+<p style="color:yellow;"> BIENVENIDOS  A  LA APP </p>
+</H1>
+</TD></TR>
+</TABLE>
+</CENTER>
+
+<MARQUEE BEHAVIOR=ALTERNATE><h1 class="auto-style1">Star Wars  una busqueda  diferente </h1> </MARQUEE>
+<MARQUEE BEHAVIOR=ALTERNATE>HOLA TODOS </MARQUEE>
+<audio src="audio.mp3" preload="none" controls></audio>
+	<p>
+	<span class="auto-style1">Aqui se encuentra el resultado de la busqueda:<ul style="height: 1800px">
+	</div>
+	<div id="tswcontproper">
+        <!--Aqui se carga los datos de la API como son retornados por el JavaScript-->
+
+    </ul>
+	<script  src="star-wars-scripts.js"></script>
+
+
+	<!-- fin del contenido -->
+	</div>
+	
+
+	<div id="tswsidecol">
+	<div id="tswsideproper">
+	<!-- aqui empieza la barra lateral de navegacion -->
+
+	<p style="color:red;"> Eyder Armando Gonzalez Medina </p>
+<p style="color:yellow;"> MENÙ PRINCIPAL</p>
+<p style="color:red;"class="auto-style1">
+	<a href="#00ff" onclick="FuncionLimpiar(tswcontproper)">Home</a>
+	</p>
+	<p class="auto-style1">
+	<a Href="#" onclick="FuncionPeliculas()">Peliculas</a>
+	</p>
+	<p class="auto-style1">
+	<a Href="#" onclick="FuncionPersonajes()">Personajes</a>
+	</p>
+	<p class="auto-style1">
+	<a Href="#" onclick="FuncionPlanetas()">Planetas</a>
+	</p>
+	<p class="auto-style1">
+	<a Href="#" onclick="FuncionNaves()">Naves</a>
+	</p>
+
+	<!-- aqui termina la barra lateral de navegacion -->
+	</div>
+	</div>
+	<div style="clear: both;"></div>
+
+</div>
+
+</body>
+
+</html>
